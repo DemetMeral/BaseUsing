@@ -6,17 +6,29 @@ namespace BaseUsing
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            A nesne = new A();
+            nesne.Yaz();
+            Console.ReadLine();
         }
     }
 
     class A:B
     {
-    
+    public void Yaz()
+        {
+            Console.WriteLine("A:B");
+
+        }
     }
 
     class B
     {
+        public void Yaz()
+        {
+
+            Console.WriteLine("B");
+        }
 
 
     }
